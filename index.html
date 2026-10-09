@@ -1,0 +1,131 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>신경해부학 Ch01 · 신경계의 발생과 구성</title>
+<style>
+:root{--bg:#f4f7fa;--cd:#fff;--tx:#1b2433;--mu:#5d6b82;--pr:#0f7c74;--nv:#14284b;--bd:#dde3ec;--ok:#1b8a4b;--no:#c0392b;--rd:#a02a48}
+@media(prefers-color-scheme:dark){:root{--bg:#10151d;--cd:#192130;--tx:#e6ebf3;--mu:#98a5ba;--pr:#35b3a8;--nv:#9ec0ee;--bd:#2b3648;--ok:#4cc27f;--no:#ff7b6b;--rd:#ff8fab}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 -apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;-webkit-text-size-adjust:100%}
+.w{max-width:920px;margin:auto;padding:0 12px calc(40px + env(safe-area-inset-bottom))}
+.hero{background:linear-gradient(135deg,#14284b,#0f7c74);color:#fff;padding:calc(22px + env(safe-area-inset-top)) 16px 18px}
+.hero .in{max-width:920px;margin:auto}.lb{background:rgba(255,255,255,.2);padding:2px 12px;border-radius:8px;font-weight:700;font-size:13px}
+.hero h1{margin:8px 0 2px;font-size:30px}.hero p{margin:2px 0;opacity:.85;font-size:14px}
+.st{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin-top:12px}.st div{background:rgba(255,255,255,.14);border-radius:10px;padding:8px 10px}.st b{display:block;font-size:19px}.st span{font-size:12px}
+.bar{position:sticky;top:0;z-index:5;background:var(--bg);padding:8px 0 6px;border-bottom:1px solid var(--bd)}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:6px 0}.chips a{flex:none;font-size:13px;padding:5px 11px;border-radius:14px;background:var(--cd);border:1px solid var(--bd);color:var(--pr);text-decoration:none}
+#s{width:100%;padding:10px 12px;border-radius:10px;border:1px solid var(--bd);background:var(--cd);color:var(--tx);font-size:16px}
+section{scroll-margin-top:130px}h2{color:var(--nv);border-bottom:2px solid var(--pr);padding-bottom:4px;margin:26px 0 8px;font-size:21px}
+.pn{display:inline-block;background:var(--pr);color:#fff;font-size:12px;padding:1px 9px;border-radius:8px;margin-right:6px;vertical-align:middle}
+.cd{background:var(--cd);border:1px solid var(--bd);border-radius:14px;padding:13px 14px;margin:10px 0}.cd h3{margin:0 0 6px;font-size:16.5px;color:var(--pr)}
+.cd .en{color:var(--mu);font-size:13px;margin:-4px 0 6px}ul{padding-left:20px;margin:4px 0}li{margin:3px 0}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px;min-width:460px}th{background:var(--nv);color:#fff;text-align:left}th,td{padding:7px 9px;border:1px solid var(--bd);vertical-align:top}
+.n{border-radius:10px;padding:9px 12px;margin:10px 0;font-size:14.5px;background:rgba(15,124,116,.1);border-left:4px solid var(--pr)}
+.n.c{background:rgba(160,42,72,.1);border-color:var(--rd)}.n.x{background:rgba(224,160,40,.14);border-color:#e0a028}
+.tg{font-size:11.5px;padding:1px 7px;border-radius:8px;color:#fff;margin-right:5px;background:var(--mu)}.tg.t{background:var(--pr)}.tg.l{background:#b9770e}
+.fl .s{background:var(--bg);border-left:4px solid var(--pr);padding:7px 10px;border-radius:8px}.fl i{text-align:center;display:block;color:var(--mu);font-style:normal;line-height:1.1}
+.opt{display:block;width:100%;text-align:left;margin:6px 0;padding:11px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx);font-size:15px}
+.opt.ok{background:var(--ok);color:#fff}.opt.no{background:var(--no);color:#fff}.ex{display:none;margin-top:8px;padding:8px;border-radius:8px;background:var(--bg)}
+.btn{padding:10px 16px;border:0;border-radius:10px;background:var(--pr);color:#fff;font-size:15px}mark{background:#ffe38a;color:#000}.hid{display:none}
+</style></head><body>
+<div class="hero"><div class="in"><span class="lb">CHAPTER 01</span><h1>신경계의 발생과 구성</h1><p>Composition and Development of the Nervous System</p><p>신경해부학 2주차 강의록 · 2026-2 · 교재 1장</p>
+<div class="st"><div><b>12쌍</b><span>뇌신경</span></div><div><b>31쌍</b><span>척수신경</span></div><div><b>3주</b><span>신경계 발생 시작</span></div><div><b>4→5주</b><span>3→5뇌소포</span></div><div><b>1 : 10~15</b><span>슈반 : 희소돌기</span></div></div></div></div>
+<div class="w"><div class="bar"><input id="s" type="search" placeholder="이 단원에서 검색 (예: 신경능선, 날개판, 슈반)"><div class="chips" id="ch"></div></div><div id="m"></div></div>
+<script>
+// 블록: h=소제목(영문 선택), u=목록, t=표, n=박스(종류:k핵심/c임상/x주의), f=단계 도식
+const P=[
+["ov","단원 개요","",[
+["h","학습목표","교재 1장 5개 + 임상 활용 2개(6·7)"],
+["u",["신경계의 발생단계를 시기별로 구분하고 각 단계에서 무엇이 만들어지는지 설명한다.","뇌의 발달과정을 일차·이차 뇌소포기로 나누어 성숙 뇌부분·뇌실과 연결한다.","척수의 발달과정을 뇌실막층·외투층·가장자리층, 날개판·바닥판으로 설명한다.","비정상 발달로 인한 질환(뇌없음증·척추갈림증)의 기전과 임상 양상을 연결한다.","신경세포와 신경아교세포의 종류와 기능을 구분한다.","중추·말초신경계의 구성요소를 구분하고 회색질·백색질의 차이를 설명한다.","말초신경섬유의 분류(Ia~IV, Aα~C)와 감각수용기의 기능을 대응시킨다."]],
+["h","로드맵"],["t",["PART","내용"],[["1 신경계의 개요","CNS vs PNS · 회색질/백색질 · 명칭 체계"],["2 신경계의 발생","배아 3단계 · 신경관 형성 · 신경능선 · 신경관결손"],["3 뇌와 척수의 발달","일차·이차 뇌소포 · 뇌실 · 날개판/바닥판 분화"],["4 신경조직","신경세포 · 아교세포 · 말이집 · 신경섬유 분류"]]],
+["n","k","학습 흐름: 구조(해부) → 형성 과정(발생) → 손상 시 문제(임상). 발생 순서를 알면 병변 위치와 결손 양상이 왜 짝지어지는지 설명된다."]]],
+["p1","PART 1 · 신경계의 개요","Organization of the Nervous System",[
+["h","중추 vs 말초신경계","Central vs Peripheral"],
+["t",["구분","구성","역할"],[["중추신경계 CNS","뇌(대뇌·사이뇌·중간뇌·다리뇌·숨뇌·소뇌·둘레계) + 척수(CNS 중 가장 단순, 신경관 구조 유지)","감각정보 통합·운동명령 생성·내장기능 조절"],["말초신경계 PNS","몸신경계(뇌신경 12쌍+척수신경 31쌍, 의식적 활동) + 자율신경계(교감·부교감·창자신경, 항상성)","감각기관 자극을 CNS로, 명령을 효과기로 전달"]]],
+["n","k","'뼈(머리뼈·척주) 속에 있으면 CNS, 밖으로 나오면 PNS' — 보호 구조물 유무가 1차 구분 기준."],
+["h","CNS 각 부위의 기능"],
+["t",["부위","핵심 기능"],[["대뇌","지각·인지·감정·기억·고위 운동기능"],["사이뇌","시상(감각 중계)·시상하부(자율·내분비)·시상밑부·시상상부"],["중간뇌","뇌줄기 중 가장 작음 — 청각·시각계 중계핵"],["다리뇌","대뇌겉질의 수의운동 명령을 소뇌로 전달"],["숨뇌","다리뇌와 함께 혈압·호흡 조절"],["소뇌","수축·이완 조절, 움직임 비교·교정, 자세와 머리·눈 협응"],["척수","몸통·팔다리 감각 수용, 수의·반사운동"]]],
+["n","c","소뇌는 '움직임을 만드는 곳'이 아니라 '만들어진 움직임을 비교·교정하는 곳' — 소뇌 병변에서 마비 없이 조화가 깨지는 이유."],
+["h","몸신경계 vs 자율신경계"],
+["t",["","몸신경계","자율신경계"],[["연결","CNS ↔ 피부·뼈대근육","CNS ↔ 심장근·민무늬근·분비샘"],["기능","의식적 신체 활동(수의운동·의식 감각)","호흡·순환·대사·배설·생식, 항상성"],["구조","들신경(감각→CNS)·날신경(CNS→근육)","신경절이전 → 신경절이후 2-뉴런 구조"]]],
+["n","x","자율신경계는 뇌·척수 안에도 중추가 있어 'PNS 전용'이 아니다. 교재는 말초 지배 경로 기준으로 PNS에 배치."],
+["h","회색질·백색질과 명칭 체계"],
+["t",["","회색질","백색질"],[["구성","신경세포체·가지돌기","말이집으로 싸인 축삭 다발 (지방 → 흰색)"],["기능","정보 통합(integration)","부위 간 정보 전달(conduction)"],["위치","척수=안쪽 H자 / 대뇌·소뇌=바깥 겉질",""]]],
+["t",["구분","CNS","PNS"],[["세포체 집단","신경핵 nucleus·겉질 cortex","신경절 ganglion"],["축삭 다발","신경로 tract·섬유다발 fasciculus·다리 peduncle","신경 nerve"]]],
+["n","k","'신경절'이면 말초, '핵'이면 중추. 단 바닥핵은 대뇌 속 회색질 덩어리로 예외적 명칭."]]],
+["p2","PART 2 · 신경계의 발생","Development of the Nervous System",[
+["h","자궁 내 발달 3단계와 3배엽"],
+["t",["단계","시기","내용"],[["배아-전","수정~2주","주머니배 착상·3배엽 분화"],["배아","2~8주 말","기관 형성·신경관 형성 (신경계는 여기서 만들어짐)"],["태아","8주 말~출생","신경계 성숙·말이집형성 시작"]]],
+["t",["배엽","운명"],[["외배엽","피부 + 신경계 (신경계의 기원)"],["중배엽","진피·근육·뼈대계·분비계·순환계"],["내배엽","창자·간·췌장·호흡계"]]],
+["n","k","신경계와 표피가 같은 외배엽에서 나온다 — 피부분절과 척수분절이 대응하는 발생학적 근거."],
+["h","신경관 형성 (neurulation)"],
+["f",["신경판: 수정 3주경 척삭돌기 신호를 받은 외배엽이 두꺼워짐","신경주름·신경고랑: 가장자리가 솟고 중앙이 함입(약 20일)","신경관: 제4~6 몸분절부터 닫히기 시작, 머리·꼬리 양방향","앞신경구멍 27일경 폐쇄 → 3일 후 뒤신경구멍 폐쇄","앞쪽→뇌, 뒤쪽→척수, 중심 공간→뇌실·척수 중심관"]],
+["n","x","교재는 앞 27일·뒤 약 30일. 표준 발생학 문헌은 앞 25일·뒤 27~28일. 시험은 교재 값 기준(강의록: '교재 대조 필요')."],
+["h","신경능선 — 말초신경계의 기원"],
+["u",["척수신경절(거짓홑극 감각신경세포체)","자율신경절(교감·부교감 신경절이후세포)","부신속질(카테콜아민 분비)","슈반세포(말초신경 말이집 형성·재생 담당)"]],
+["t",["구분","기원","말이집 세포","손상 후 재생"],[["CNS","신경관","희소돌기아교세포(1세포=10~15개)","제한적"],["PNS","신경능선","슈반세포(1세포=1개)","상대적으로 양호"]]],
+["n","c","말초 손상은 회복을 기대할 수 있고 중추 손상은 '재생'보다 '신경가소성'에 의존 — 신경재활의 생물학적 근거."],
+["h","신경관결손"],
+["t",["","뇌없음증 anencephaly","척추갈림증 spina bifida"],[["기전","앞신경구멍 폐쇄 실패","뒤신경구멍 폐쇄 실패"],["소견","CNS 기형 중 가장 심함, 뇌 자체가 없음(소뇌까지 없기도)","척추뼈 가시돌기·고리 하나 이상 결손"],["예후","출생 1,000명당 약 1명, 생존 어려움","병변 높이가 마비·감각소실 범위를 결정"]]],
+["t",["척추갈림증 형태","결손","신경조직","함의"],[["숨은","가시돌기·척추뼈고리","대개 정상","무증상 다수·피부 소견(털·오목)"],["수막탈출증","수막만 돌출","대개 정상(드물게 손상)","수술 후 예후 양호"],["수막척수탈출증","경질막·고리·피부 결손","수막+신경조직 돌출","다리기능·대소변 장애(LMN 양상)"]]]]],
+["p3","PART 3 · 뇌와 척수의 발달","Development of the Brain and Spinal Cord",[
+["h","일차 · 이차 뇌소포기"],
+["t",["시기","구조","굽힘"],[["4주 일차(3뇌소포)","앞뇌·중간뇌·마름뇌","2굽힘: 목굽힘(척수–마름뇌), 머리굽힘(중간뇌)"],["5주 이차(5뇌소포)","끝뇌·사이뇌·중간뇌·뒤뇌·숨뇌","3굽힘: + 다리뇌굽힘(마름뇌 등쪽, 이차뇌소포 전체 길이 9 mm 시점)"]]],
+["n","k","중간뇌만 끝까지 나뉘지 않는다 → 성숙 뇌에서도 뇌줄기 중 가장 작고 단순."],
+["t",["뇌소포","성숙 뇌부분","뇌실"],[["끝뇌","대뇌겉질·대뇌백색질·바닥핵(줄무늬체)","가쪽뇌실"],["사이뇌","시상·시상하부·시상밑부·시상상부","셋째뇌실"],["중간뇌","중간뇌","중간뇌수도관"],["뒤뇌","소뇌·다리뇌","넷째뇌실"],["숨뇌","숨뇌","넷째뇌실 쪽"],["척수","척수","중심관"]]],
+["n","c","뇌실이 막히는 위치에 따라 물뇌증 유형이 갈린다 — 중간뇌수도관 협착이 가장 흔한 폐쇄 지점."],
+["u",["뇌 형태 발달: 5주 5부위 뚜렷·표면 매끈 → 13주 반구 급확장, 사이뇌 덮기 시작 → 26주 이랑·고랑 형성 → 출생 후 성인형 주름 완성·말이집형성 진행"]],
+["h","척수의 발달"],
+["t",["신경관 벽","→ 성숙 척수"],[["뇌실막층(가장 안쪽, 다른 영역을 발생시키는 첫 영역)","—"],["외투층(중간)","회색질"],["가장자리층(가장 바깥)","백색질"]]],
+["t",["","날개판(등쪽) alar","바닥판(배쪽) basal"],[["결과","감각영역 → 뒤뿔","운동영역 → 앞뿔·가쪽뿔"],["연결","뒤뿌리신경절 거짓홑극세포 축삭 입력(일반몸감각·일반내장감각)","일반몸날신경섬유→뼈대근육, 앞뿌리 구성"]]],
+["n","k","경계고랑(sulcus limitans) 한 줄이 평생 감각/운동의 경계. 대뇌·소뇌는 세포가 바깥으로 이동해 겉질을 만들므로 배치가 반대."],
+["t",["가쪽뿔 분절","신경세포","출력"],[["가슴 T1~T12, 허리 L1~L3","교감 신경절이전세포","일반내장날신경 → 민무늬근·샘"],["엉치 S2~S4","부교감 신경절이전세포","〃"]]],
+["n","c","T6 이상 척수손상에서 자율신경반사이상: 교감 유출로가 T1~L3에 몰려 있어 그 위 손상이면 상위 조절이 끊김."],
+["n","x","Bell–Magendie 원칙: 뒤뿌리=감각(뒤뿔), 앞뿌리=운동(앞뿔, 알파·감마 LMN). 뒤뿌리 병변은 감각만, 앞뿔 병변은 운동만 침범."],
+["h","수막 형성과 말이집형성"],
+["u",["수막: 수정 4주경 중배엽 유래 원시수막 → 3층(안→밖) 연질막→거미막→경질막, 연질막–거미막 사이 거미막밑공간에 뇌척수액","말이집형성: 태아 8주~출생 시작 → 생후 4개월경 척수 → 생후 1년 일부 하행로 미완 → 1~2년 완료","기능: 절연 → 전달속도 증가, 축삭 보호"]],
+["n","c","말이집형성이 미완인 시기엔 하행 운동로 전도가 느려 원시반사가 남는다 — 영아 운동발달 평가의 배경."]]],
+["p4","PART 4 · 신경조직","Nervous Tissue",[
+["h","신경세포의 구조와 소기관"],
+["t",["부분","내용"],[["가지돌기","입력장소, 짧고 많으며 끝으로 갈수록 가늘어짐"],["축삭","출력장소, 길고 가늘며 종말부 굵음. 축삭둔덕은 니슬소체 없음. 연접전종말 소포에 전달물질 저장"],["세포뼈대","미세관(형태·운반 레일)·미세섬유(세포질 형태)·신경미세섬유(축삭 지름 유지)"],["니슬소체","단백질 합성·영양공급. 세포체·가지돌기에 있고 축삭둔덕·축삭에는 없음"]]],
+["n","c","축삭 절단 후 염색질용해(chromatolysis) — 니슬소체가 원래 세포체에 있기 때문."],
+["h","축삭운반"],
+["t",["","전행성 anterograde","역행성 retrograde"],[["방향","세포체→축삭→종말","종말→세포체"],["매개·운반물","신경미세관+키네신 / 전달물질·소포·막단백질","사용된 물질·신경영양인자 / 일부 바이러스·독소 침입로"]]],
+["n","x","축삭운반 속도는 노화될수록 느려진다 — 고령자 말초신경 회복 지연의 한 기전."],
+["h","신경세포 분류"],
+["t",["돌기 수","구조","위치"],[["홑극 unipolar","돌기 1개가 두 축삭으로 갈라짐","척수·뇌신경 감각신경절(뒤뿌리신경절은 거짓홑극)"],["두극 bipolar","축삭·가지돌기 각 1개","속귀신경(CN VIII) 신경절·후각신경(CN I)·망막"],["다극 multipolar","가지돌기 2개 이상+축삭 1개(가장 흔함)","운동신경세포·자율신경·사이신경세포·피라미드세포·퍼킨제세포"]]],
+["t",["기능","역할"],[["들신경 afferent","말초→중추 감각 전달"],["날신경 efferent","중추→근육 명령. 몸운동(UMN: 경직·과반사 / LMN: 이완마비·위축), 내장운동(신경절이전·이후, 자율신경 기능이상)"],["사이신경 interneuron","CNS 내 중계·조절"]]],
+["n","c","UMN/LMN 감별은 신경계 물리치료 평가의 출발점."],
+["h","신경아교세포"],
+["t",["세포","핵심 기능"],[["별아교세포 astrocyte","CNS에서 가장 많음·종말족으로 아교세포경계막·혈액뇌장벽(BBB)·K⁺ 완충·전달물질 대사·허혈/외상 후 아교 반흔"],["희소돌기아교세포","CNS 말이집, 1세포=10~15개"],["미세아교세포","청소(포식)세포·면역, 손상된 신경세포 제거"],["뇌실막세포","중심관·뇌실 속면 섬모세포, 맥락얼기 상피성 막에서 뇌척수액 생성"],["슈반세포(PNS)","말이집 형성·재생 통로, 신경능선 유래, 1세포=1말이집"],["위성세포(PNS)","말초 신경절 세포체 지지·미세환경 조절"]]],
+["n","c","아교 반흔은 손상 부위를 막아주지만 축삭 재생을 방해 — 중추신경 재생이 어려운 핵심 이유."],
+["h","말이집과 도약전도"],
+["u",["말이집(단백질+지방): 전기적 절연장치","신경섬유마디(수 mm 간격, 길이 약 1 μm): Na⁺·K⁺ 통로 고농도 → 활동전위가 마디를 건너뜀(도약전도)","전도속도 결정: 말이집 유무 + 축삭 굵기"]],
+["n","c","탈수초성 질환(다발성경화증·길랭바레증후군)에서 근력 저하와 감각 이상이 함께 — 굵은 유수섬유부터 느려진다."],
+["h","몸감각 수용기"],
+["t",["수용기","섬유","기능","적응","문턱값"],[["자유신경종말","C·Aδ","통증·온도·둔한 촉감","느림","높음"],["마이스너소체","Aβ","촉감·동적 압력(털 없는 피부)","빠름","낮음"],["파치니소체","Aβ","깊은 압력·진동(피부·뼈사이막)","빠름","낮음"],["메르켈원반","Aβ","촉감·정적 압력","느림","낮음"],["루피니소체","Aβ","피부 뻗침","느림","낮음"],["근방추","Ia·II","근육 길이","느림·빠름","낮음"],["골지힘줄기관","Ib","근육 긴장(힘줄)","—","낮음"]]],
+["n","k","빠른 적응(마이스너·파치니)=변화(동적), 느린 적응(메르켈·루피니·자유신경종말)=지속(정적). 문턱값이 높은 것은 자유신경종말뿐."],
+["h","신경섬유 분류 (A·B·C vs I~IV)"],
+["t",["Erlanger","Lloyd-Hunt","감각","운동","지름 μm / m/s"],[["Aα","Ia·Ib","근방추 길이·속도 / 골지힘줄기관 장력","α운동(방추밖근육)","12~20 / 70~120"],["Aβ","II","이차근방추·피부 기계수용기(촉·압·진동)","—","5~12 / 30~70"],["Aγ","—","—","γ운동(방추속근육, 근방추 민감도)","3~6 / 15~30"],["Aδ","III","빠른 통증·차가움·조잡촉각","—","2~5 / 12~30"],["B","—","내장 구심성","자율 절전섬유","<3 / 3~15"],["C","IV","느린 통증·따뜻함·가려움(민말이집)","자율 절후섬유","0.4~1.2 / 0.5~2"]]],
+["n","x","Erlanger-Gasser(A·B·C)는 감각+운동 모두, Lloyd-Hunt(I~IV)는 구심성 감각섬유에만 적용."]]],
+["qk","시험 대비 요약","",[
+["t",["항목","핵심"],[["CNS/PNS","뼈 속=CNS, 밖=PNS · 핵↔신경절, 신경로↔신경"],["기원","신경관→CNS, 신경능선→PNS"],["신경관결손","앞=뇌없음증, 뒤=척추갈림증"],["뇌소포","3(4주)→5(5주), 중간뇌만 안 나뉨"],["척수","외투층=회색질, 가장자리층=백색질 · 날개판=감각, 바닥판=운동"],["가쪽뿔","T1~L3 교감, S2~S4 부교감"],["말이집","CNS 1:10~15 / PNS 1:1"],["수용기","빠른 적응: 마이스너·파치니 / 문턱값 높음: 자유신경종말"]]]]]
+];
+const Q=[["중추신경계의 기원은?",["신경능선","신경관","중배엽","내배엽"],1,"신경관→CNS, 신경능선→PNS."],["앞신경구멍 폐쇄 실패로 생기는 질환은?",["척추갈림증","수막탈출증","뇌없음증","물뇌증"],2,"앞=뇌없음증, 뒤=척추갈림증."],["척수 외투층이 되는 것은?",["백색질","회색질","뇌척수액","수막"],1,"외투층=회색질, 가장자리층=백색질."],["감각을 담당하는 척수 구획의 기원은?",["날개판","바닥판","뇌실막층","가장자리층"],0,"날개판=뒤뿔(감각), 바닥판=앞뿔·가쪽뿔(운동)."],["가쪽뿔이 있는 분절은?",["C1~C8","T1~L3, S2~S4","L4~S1","전 분절"],1,"T1~L3 교감, S2~S4 부교감."],["이차뇌소포기(5주)에서 나뉘지 않는 소포는?",["앞뇌","중간뇌","마름뇌","끝뇌"],1,"중간뇌만 그대로."],["슈반세포 1개가 만드는 말이집 수는?",["1개","3개","10~15개","수십 개"],0,"희소돌기아교세포가 10~15개."],["니슬소체가 없는 곳은?",["세포체","가지돌기","축삭둔덕","모두 있음"],2,"축삭둔덕과 축삭에는 없음."],["Lloyd-Hunt II군에 해당하는 것은?",["Aα","Aβ","Aδ","C"],1,"Aβ=II, Aδ=III, C=IV, Aα=Ia·Ib."],["문턱값이 높은 유일한 수용기는?",["파치니소체","마이스너소체","자유신경종말","루피니소체"],2,"통증·온도."]];
+const $=s=>document.querySelector(s);
+const tb=(h,r)=>'<div class="tw"><table><tr>'+h.map(x=>'<th>'+x+'</th>').join('')+'</tr>'+r.map(a=>'<tr>'+a.map(x=>'<td>'+x+'</td>').join('')+'</tr>').join('')+'</table></div>';
+const N={k:"핵심",c:"임상 연결",x:"주의"},TG={k:"t",c:"l",x:""};
+function blk(b){const k=b[0];if(k=="h")return '<h3>'+b[1]+'</h3>'+(b[2]?'<div class="en">'+b[2]+'</div>':'');
+if(k=="u")return '<ul>'+b[1].map(x=>'<li>'+x+'</li>').join('')+'</ul>';if(k=="t")return tb(b[1],b[2]);
+if(k=="n")return '<div class="n '+(b[1]=="k"?"":b[1])+'"><span class="tg '+TG[b[1]]+'">'+N[b[1]]+'</span>'+b[2]+'</div>';
+return '<div class="fl">'+b[1].map((s,i)=>'<div class="s"><b>'+(i+1)+'.</b> '+s+'</div>').join('<i>▼</i>')+'</div>'}
+// 소제목(h)을 기준으로 카드로 묶기
+function cards(bl){const o=[];let c=null;bl.forEach(b=>{if(b[0]=="h"||!c){c={h:[],b:[]};o.push(c)}c.b.push(b)});return o.map(c=>'<div class="cd">'+c.b.map(blk).join('')+'</div>').join('')}
+let h='',ch='';P.forEach(p=>{ch+='<a href="#" onclick="document.getElementById(\''+p[0]+'\').scrollIntoView({behavior:\'smooth\'});return false">'+p[1].split(' · ')[0]+'</a>';
+h+='<section id="'+p[0]+'"><h2>'+p[1]+(p[2]?' <small style="font-size:13px;color:var(--mu)">'+p[2]+'</small>':'')+'</h2>'+cards(p[3])+'</section>'});
+ch+='<a href="#" onclick="document.getElementById(\'quiz\').scrollIntoView({behavior:\'smooth\'});return false">확인문제</a>';
+h+='<section id="quiz"><h2>확인문제 <small style="font-size:13px;color:var(--mu)">'+Q.length+'문항 · 선택 시 즉시 채점</small></h2><div id="qs">'+Q.map((q,i)=>'<div class="cd" id="q'+i+'"><b>'+(i+1)+'. '+q[0]+'</b>'+q[1].map((o,j)=>'<button class="opt" onclick="pk('+i+','+j+')">'+o+'</button>').join('')+'<div class="ex"></div></div>').join('')+'</div><div class="n k" id="sc">점수: 0 / '+Q.length+'</div><button class="btn" onclick="location.reload()">다시 풀기</button></section>';
+$("#m").innerHTML=h;$("#ch").innerHTML=ch;
+let sc=0,dn={};function pk(i,j){if(dn[i])return;dn[i]=1;const q=Q[i],bs=document.querySelectorAll('#q'+i+' .opt');bs[q[2]].classList.add('ok');if(j!=q[2])bs[j].classList.add('no');else sc++;const e=$('#q'+i+' .ex');e.style.display='block';e.innerHTML=(j==q[2]?'정답! ':'오답. ')+'해설: '+q[3];$('#sc').textContent='점수: '+sc+' / '+Q.length}
+// 검색: 카드 단위 필터 + 하이라이트
+const cardsAll=[...document.querySelectorAll('#m .cd')],orig=cardsAll.map(c=>c.innerHTML);
+$("#s").addEventListener("input",e=>{const q=e.target.value.trim().toLowerCase();cardsAll.forEach((c,i)=>{c.innerHTML=orig[i];const hit=!q||c.textContent.toLowerCase().includes(q);c.classList.toggle('hid',!hit);if(q&&hit&&!c.querySelector('.opt')){const re=new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi');c.innerHTML=orig[i].replace(/>([^<]+)</g,(m,t)=>'>'+t.replace(re,x=>'<mark>'+x+'</mark>')+'<')}})});
+</script></body></html>
